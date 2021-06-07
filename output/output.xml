@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210607 13:22:22.286" rpa="false" schemaversion="2">
+<suite id="s1" name="AndroidMobileTest" source="C:\Users\LQA\PycharmProjects\pythonProject\TestCases\AndroidMobileTest.robot">
+<test id="s1-t1" name="OpenApp">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=ANDROID</arg>
+<arg>platformVersion=9</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.google.android.calculator</arg>
+<arg>appActivity=com.android.calculator2.Calculator</arg>
+<arg>automationName=UIAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20210607 13:22:22.507" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='ANDROID' | platformVersion='9' | deviceName='emulator-5554' | appPackage='com.google.android.calculator' | appActivity='com.android.calculator2.Calculator' | automationName='UIAutomator2' ]</msg>
+<msg timestamp="20210607 13:22:24.522" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "ANDROID", "appium:platformVersion": "9", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.google.android.calculator", "appium:appActivity": "com.android.calculator2.Calculator", "appium:automationName": "UIAutomator2"}]}, "desiredCapabilities": {"platformName": "ANDROID", "platformVersion": "9", "deviceName": "emulator-5554", "appPackage": "com.google.android.calculator", "appActivity": "com.android.calculator2.Calculator", "automationName": "UIAutomator2"}}</msg>
+<msg timestamp="20210607 13:22:24.538" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20210607 13:22:37.103" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 964</msg>
+<msg timestamp="20210607 13:22:37.104" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:37.106" level="DEBUG">Opened application with session id 084c9461-4eb9-4dae-9756-e869fb67e3e5</msg>
+<msg timestamp="20210607 13:22:37.107" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20210607 13:22:22.507" endtime="20210607 13:22:37.107"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/digit_2</arg>
+<arg>timeout=10</arg>
+<arg>error=false</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20210607 13:22:37.116" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/digit_2' | timeout='10' | error='false' ]</msg>
+<msg timestamp="20210607 13:22:37.117" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/digit_2"}</msg>
+<msg timestamp="20210607 13:22:37.559" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:37.559" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:37.559" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:37.116" endtime="20210607 13:22:37.559"/>
+</kw>
+<kw name="AddTestCase">
+<msg timestamp="20210607 13:22:37.560" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/digit_2</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:37.560" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/digit_2' ]</msg>
+<msg timestamp="20210607 13:22:37.561" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_2'.</msg>
+<msg timestamp="20210607 13:22:37.562" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/digit_2"}</msg>
+<msg timestamp="20210607 13:22:38.582" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:38.582" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:38.582" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/8f01ecac-b6c1-426d-95b9-171a2ef9d627/click {"id": "8f01ecac-b6c1-426d-95b9-171a2ef9d627"}</msg>
+<msg timestamp="20210607 13:22:38.612" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/8f01ecac-b6c1-426d-95b9-171a2ef9d627/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:38.612" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:38.612" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:37.560" endtime="20210607 13:22:38.612"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/op_add</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:38.612" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/op_add' ]</msg>
+<msg timestamp="20210607 13:22:38.613" level="INFO">Clicking element 'id=com.google.android.calculator:id/op_add'.</msg>
+<msg timestamp="20210607 13:22:38.614" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/op_add"}</msg>
+<msg timestamp="20210607 13:22:39.225" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:39.225" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:39.225" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/631e4cc0-f9d1-495e-9147-a92017778eea/click {"id": "631e4cc0-f9d1-495e-9147-a92017778eea"}</msg>
+<msg timestamp="20210607 13:22:39.247" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/631e4cc0-f9d1-495e-9147-a92017778eea/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:39.247" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:39.248" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:38.612" endtime="20210607 13:22:39.248"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/digit_9</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:39.248" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/digit_9' ]</msg>
+<msg timestamp="20210607 13:22:39.249" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_9'.</msg>
+<msg timestamp="20210607 13:22:39.249" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/digit_9"}</msg>
+<msg timestamp="20210607 13:22:39.345" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:39.345" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:39.346" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/9d29adfd-845a-4241-bb57-454a438ba6d3/click {"id": "9d29adfd-845a-4241-bb57-454a438ba6d3"}</msg>
+<msg timestamp="20210607 13:22:39.817" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/9d29adfd-845a-4241-bb57-454a438ba6d3/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:39.818" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:39.818" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:39.248" endtime="20210607 13:22:39.818"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/eq</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:39.819" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/eq' ]</msg>
+<msg timestamp="20210607 13:22:39.822" level="INFO">Clicking element 'id=com.google.android.calculator:id/eq'.</msg>
+<msg timestamp="20210607 13:22:39.822" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/eq"}</msg>
+<msg timestamp="20210607 13:22:39.915" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:39.915" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:39.916" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/8c3c8821-93cc-4c0f-9641-c0e24e15056e/click {"id": "8c3c8821-93cc-4c0f-9641-c0e24e15056e"}</msg>
+<msg timestamp="20210607 13:22:40.416" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/8c3c8821-93cc-4c0f-9641-c0e24e15056e/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:40.416" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:40.416" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:39.819" endtime="20210607 13:22:40.418"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>10</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20210607 13:22:40.418" level="TRACE">Arguments: [ '10' ]</msg>
+<msg timestamp="20210607 13:22:40.418" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/source {}</msg>
+<msg timestamp="20210607 13:22:41.017" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/source HTTP/1.1" 200 18275</msg>
+<msg timestamp="20210607 13:22:41.018" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:41.019" level="INFO">Current page contains text '10'.</msg>
+<msg timestamp="20210607 13:22:41.019" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:40.418" endtime="20210607 13:22:41.019"/>
+</kw>
+<msg timestamp="20210607 13:22:41.019" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:37.559" endtime="20210607 13:22:41.019"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/result</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:41.019" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/result' ]</msg>
+<msg timestamp="20210607 13:22:41.020" level="INFO">Clear text field 'id=com.google.android.calculator:id/result'</msg>
+<msg timestamp="20210607 13:22:41.021" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/result"}</msg>
+<msg timestamp="20210607 13:22:41.514" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:41.515" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:41.515" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/07820df3-6b4d-49ab-9d4b-a7c57bca97ce/clear {"id": "07820df3-6b4d-49ab-9d4b-a7c57bca97ce"}</msg>
+<msg timestamp="20210607 13:22:41.532" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/07820df3-6b4d-49ab-9d4b-a7c57bca97ce/clear HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:41.532" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:41.533" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:41.019" endtime="20210607 13:22:41.533"/>
+</kw>
+<kw name="MulTestCase">
+<msg timestamp="20210607 13:22:41.533" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/digit_2</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:41.533" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/digit_2' ]</msg>
+<msg timestamp="20210607 13:22:41.534" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_2'.</msg>
+<msg timestamp="20210607 13:22:41.535" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/digit_2"}</msg>
+<msg timestamp="20210607 13:22:42.146" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:42.146" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:42.146" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/eb30df2f-c043-4abf-8cc1-f593e1192ad9/click {"id": "eb30df2f-c043-4abf-8cc1-f593e1192ad9"}</msg>
+<msg timestamp="20210607 13:22:42.165" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/eb30df2f-c043-4abf-8cc1-f593e1192ad9/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:42.166" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:42.166" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:41.533" endtime="20210607 13:22:42.166"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/op_mul</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:42.166" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/op_mul' ]</msg>
+<msg timestamp="20210607 13:22:42.167" level="INFO">Clicking element 'id=com.google.android.calculator:id/op_mul'.</msg>
+<msg timestamp="20210607 13:22:42.167" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/op_mul"}</msg>
+<msg timestamp="20210607 13:22:42.769" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:42.770" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:42.770" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/38af371e-d296-4ee5-8d6a-f7041363de8b/click {"id": "38af371e-d296-4ee5-8d6a-f7041363de8b"}</msg>
+<msg timestamp="20210607 13:22:42.794" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/38af371e-d296-4ee5-8d6a-f7041363de8b/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:42.794" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:42.794" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:42.166" endtime="20210607 13:22:42.794"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/digit_9</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:42.795" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/digit_9' ]</msg>
+<msg timestamp="20210607 13:22:42.797" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_9'.</msg>
+<msg timestamp="20210607 13:22:42.797" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/digit_9"}</msg>
+<msg timestamp="20210607 13:22:43.385" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:43.385" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:43.385" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/f4ce2872-f209-47b9-bbe3-3c1788b5c7df/click {"id": "f4ce2872-f209-47b9-bbe3-3c1788b5c7df"}</msg>
+<msg timestamp="20210607 13:22:43.411" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/f4ce2872-f209-47b9-bbe3-3c1788b5c7df/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:43.411" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:43.411" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:42.794" endtime="20210607 13:22:43.412"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.calculator:id/eq</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210607 13:22:43.412" level="TRACE">Arguments: [ 'id=com.google.android.calculator:id/eq' ]</msg>
+<msg timestamp="20210607 13:22:43.413" level="INFO">Clicking element 'id=com.google.android.calculator:id/eq'.</msg>
+<msg timestamp="20210607 13:22:43.413" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements {"using": "id", "value": "com.google.android.calculator:id/eq"}</msg>
+<msg timestamp="20210607 13:22:43.475" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20210607 13:22:43.476" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:43.476" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/f76da460-e0c4-460c-9978-6a2bea52fe54/click {"id": "f76da460-e0c4-460c-9978-6a2bea52fe54"}</msg>
+<msg timestamp="20210607 13:22:43.998" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/element/f76da460-e0c4-460c-9978-6a2bea52fe54/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20210607 13:22:43.999" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:43.999" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:43.412" endtime="20210607 13:22:43.999"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>18</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20210607 13:22:44.000" level="TRACE">Arguments: [ '18' ]</msg>
+<msg timestamp="20210607 13:22:44.000" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/source {}</msg>
+<msg timestamp="20210607 13:22:45.184" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/084c9461-4eb9-4dae-9756-e869fb67e3e5/source HTTP/1.1" 200 17280</msg>
+<msg timestamp="20210607 13:22:45.184" level="DEBUG">Finished Request</msg>
+<msg timestamp="20210607 13:22:45.185" level="INFO">Current page contains text '18'.</msg>
+<msg timestamp="20210607 13:22:45.185" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:44.000" endtime="20210607 13:22:45.185"/>
+</kw>
+<msg timestamp="20210607 13:22:45.185" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20210607 13:22:41.533" endtime="20210607 13:22:45.186"/>
+</kw>
+<status status="PASS" starttime="20210607 13:22:22.507" endtime="20210607 13:22:45.186"/>
+</test>
+<status status="PASS" starttime="20210607 13:22:22.288" endtime="20210607 13:22:45.187"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AndroidMobileTest">AndroidMobileTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
