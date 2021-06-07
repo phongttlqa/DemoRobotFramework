@@ -9,3 +9,4 @@ https://github.com/phongttlqa/DemoRobotFramework/blob/master/TestCases/CreateAcc
 
 Demo test app android
 https://github.com/phongttlqa/DemoRobotFramework/blob/master/TestCases/AndroidMobileTest.robot
+https://github.com/phongttlqa/DemoRobotFramework/blob/master/TestCases/DemoLoginAndroid.robot
